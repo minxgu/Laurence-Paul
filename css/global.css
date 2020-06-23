@@ -1,0 +1,679 @@
+header > .inner nav ul li a,
+header > .inner button,
+header > .inner > div p,
+header > .inner > div form fieldset a,
+header > .inner > div form fieldset input,
+header > .inner > div form input[type='submit'],
+header > .inner > div form button,
+a.top,
+footer > *,
+.main_slider ul li div p,
+.slider p,
+.slider ul li dl > *,
+.glassesBanner p,
+.lookbookBanner div p,
+.btn,
+.btn_sort,
+.sortby ul > li > ol li,
+.list > .inner > ul > li > div dl > *,
+.lookbook p,
+.detail_right_info strong,
+.detail_right_info p,
+.detail_right_info small,
+.detail_right_info button,
+.toast p,
+.toast button{
+    font-family: 'PT Sans';
+}
+
+.modal h2,
+header > .inner > div.login.open div h2,
+.main_slider ul li div h2,
+.glassesBanner h2,
+.lookbookBanner div h2,
+.slider h2,
+.sortby h2,
+.lookbook h2,
+.lookbook ul > li figure figcaption,
+.detail_right_info h2{
+    font-family: 'Playfair Display';
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    display: block;
+    width: 160px;
+    height: 35px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+.btn_wish{
+    border: none;
+    width: 20px;
+    height: 17px;
+    display: block;
+    text-indent: -9999px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+header > .inner .btn_wish.active,
+header.headerChange .inner .btn_wish.active,
+.list > .inner > ul > li .btn_wish.active{
+    background-image:url("../images/main/ico_fullheart.png");
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+header > .inner{
+    width: 90%;
+    margin: 0 auto;
+}
+header > .inner:after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+header > .inner h1{
+    float: left;
+}
+header > .inner h1 a{
+    display: block;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+header > .inner nav{
+    box-sizing: border-box;
+}
+
+header > .inner nav ul li a{
+    font-size: 14px;
+}
+header > .inner > div{
+    display: none;
+}
+header > .inner > button, header > .inner .hamberg{
+    float: right;
+}
+header > .inner > button{
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+header > .inner > button:last-of-type{
+    border: none;
+    font-size: 14px;
+}
+
+/* LOGIN */
+header > .inner > div.login.open{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+header > .inner > div.login.open div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+}
+header > .inner > div.login.open div > button:first-of-type{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 18px;
+    height: 18px;
+    background: url("../images/main/ico_fold.png") no-repeat center center;
+}
+header > .inner > div.login.open div h2{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+header > .inner > div.login.open div p{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 35px;
+}
+header > .inner > div.login.open div form{
+    margin: 0 auto;
+}
+header > .inner > div.login.open div form fieldset input{
+    display: block;
+    width: 230px;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 auto;
+    border-radius: 0;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+header > .inner > div.login.open div form fieldset input:first-of-type{
+    margin-bottom: 10px;
+}
+header > .inner > div.login.open div form fieldset input:last-of-type{
+    margin-bottom: 30px;
+}
+header > .inner > div.login.open div form fieldset a{
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+header > .inner > div.login.open div form input[type='submit']{
+    display: block;
+    border-style: none;
+    width: 200px;
+    height: 30px;
+    background-color: #000;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 auto 10px;
+    cursor: pointer;
+}
+header > .inner > div.login.open div form button{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* header Fin */
+a.top{
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    background-color: #000;
+    width: 45px;
+    height: 40px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    display: none;
+}
+a.top:before{
+    content: '<';
+    display: block;
+    transform: rotate(90deg);
+    width: 10px;
+    margin: 2px auto;
+}
+/* TOP fin*/
+
+footer{
+    border-top: 1px solid #e3e3e3;
+
+}
+footer > div.inner{
+    width: 90%;
+    display: flex;
+}
+footer > div.inner > div > h3{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+footer > div.inner > div:first-of-type > a,
+footer > div.inner > div:nth-of-type(2) > address span{
+    display: block;
+}
+footer > div.inner > div:first-of-type > a,
+footer > div.inner > div:nth-of-type(2) > address *{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+footer > div.inner > div:nth-of-type(2) > address{
+    font-style: normal;
+}
+footer > div.inner > div:last-of-type ul{
+    display: flex;
+    flex-direction: row;
+}
+footer > div.inner > div:last-of-type ul li{
+    margin-left: 25px;
+}
+footer > div.inner > div:last-of-type ul li a{
+    text-indent: -9999px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+footer > div.inner > div:last-of-type ul li:first-of-type a{
+    background-image: url("../images/ico_sns_facebook.png");
+}
+footer > div.inner > div:last-of-type ul li:nth-of-type(2) a{
+    background-image: url("../images/ico_sns_insta.png");
+}
+footer > div.inner > div:last-of-type ul li:last-of-type a{
+    background-image: url("../images/ico_sns_blog.png");
+}
+footer > p{
+    font-size: 14px;
+    color: #a0a0a0;
+    text-align: center;
+}
+/* footer Fin */
+/* -----all using----- */
+
+@media screen and (max-width: 767px){
+
+    header{
+        padding: 15px 0;
+        background-color: #fff;
+        box-shadow: 0 1px 10px 1px rgba(0,0,0,0.2);
+    }
+    header > .inner h1 a{
+        width: 200px;
+        height: 20px;
+        background-image: url("../images/logo_b.png");
+    }
+    header > .inner nav{
+        position: fixed;
+        top: 50px;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        padding-top: 10%;
+        box-sizing: border-box;
+        background-color: #fff;
+        text-align: center;
+        transition: right 0.5s ease-in-out;
+    }
+    header > .inner nav ul li{
+        margin-bottom: 20px;
+    }
+    header > .inner nav ul li a{
+        color: #000;
+    }
+    header > .inner nav.active{
+        right: 0;
+    }
+
+    header > .inner > button, header > .inner .hamberg{
+        margin-left: 3%;
+    }
+    header > .inner button{
+        height: 20px;
+    }
+    header > .inner > button:last-of-type{
+        line-height: 20px;
+        color: #000;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    header > .inner > button:last-of-type.active{
+        opacity: 1;
+    }
+    header > .inner .btn_wish{
+        background: url("../images/main/ico_heart_b.png") no-repeat center center;
+        background-size: contain;
+    }
+    header > .inner .hamberg{
+        display: block;
+    }
+    header > .inner .hamberg{
+        display: block;
+        width: 20px;
+        height: 14px;
+        margin-top: 3px;
+        position: relative;
+        cursor: pointer;
+        z-index: 100;
+    }
+    header > .inner .hamberg span{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 15px;
+        background-color: #000;
+        transition: all 0.5s;
+    }
+    header > .inner .hamberg span:first-child{
+        top: 0;
+    }
+    header > .inner .hamberg span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    header > .inner .hamberg span:last-child{
+        bottom: 0;
+    }
+    header > .inner .hamberg.active span:first-child{
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    header > .inner .hamberg.active span:nth-child(2){
+        opacity: 0;
+    }
+    header > .inner .hamberg.active span:last-child{
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+    /* LOGIN */
+    header > .inner > div.login.open div{
+        width: 15%;
+        min-width: 350px;
+        height: 400px;
+        padding: 50px 0px;
+    }
+
+/* header Fin */
+
+    footer{
+        padding: 30px 0;
+    }
+    footer > div.inner{
+        margin: 0 auto 30px;
+        flex-wrap: wrap;
+    }
+    footer > div.inner:after{
+        content: '';
+        display: block;
+        visibility: hidden;
+        clear: both;
+    }
+    footer > div.inner h2{
+        display: none;
+    }
+    footer > div.inner > div:first-of-type{
+        width: 50%;
+    }
+    footer > div.inner > div > h3{
+        margin-bottom: 10px;
+    }
+    footer > div.inner > div:nth-of-type(2){
+        width: 50%;
+    }
+    footer > div.inner > div:last-of-type{
+        width: 100%;
+        margin-top: 20px;
+    }
+    footer > div.inner > div:last-of-type h3{
+        float: left;
+    }
+}
+@media screen and (min-width:768px){
+
+    header{
+        padding: 30px 0 20px;
+    }
+    /* LOGIN */
+    header > .inner > div.login.open div{
+        width: 25%;
+        min-width: 500px;
+        height: 450px;
+        padding: 70px 0px;
+    }
+/* header Fin */    
+    footer > div.inner > div:last-of-type ul{
+        justify-content: center;
+    }
+    footer > div.inner > div:last-of-type > h3{
+        text-align: center;
+    }
+    footer > div.inner > div:last-of-type ul li:first-of-type{
+        margin-left: 0px;
+    }
+/* footer fin */
+}
+@media screen and (min-width:768px) and (max-width: 1024px){
+
+    header{
+        padding: 15px 0;
+        background-color: #fff;
+        box-shadow: 0 1px 10px 1px rgba(0,0,0,0.2);
+    }
+    header > .inner h1 a{
+        width: 200px;
+        height: 20px;
+        background-image: url("../images/logo_b.png");
+    }
+    header > .inner nav{
+        position: fixed;
+        top: 50px;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        padding-top: 10%;
+        background-color: #fff;
+        text-align: center;
+        transition: right 0.5s ease-in-out;
+    }
+    header > .inner nav ul li{
+        margin-bottom: 20px;
+    }
+    header > .inner nav ul li a{
+        color: #000;
+    }
+    header > .inner nav.active{
+        right: 0;
+    }
+    header > .inner > button, header > .inner .hamberg{
+        margin-left: 3%;
+    }
+    header > .inner button{
+        height: 20px;
+    }
+    header > .inner > button:last-of-type{
+        line-height: 20px;
+        color: #000;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    header > .inner > button:last-of-type.active{
+        opacity: 1;
+    }
+    header > .inner .btn_wish{
+        background: url("../images/main/ico_heart_b.png") no-repeat center center;
+        background-size: contain;
+    }
+    header > .inner .hamberg{
+        float: right;
+        display: block;
+        width: 20px;
+        height: 14px;
+        margin-top: 3px;
+        position: relative;
+        cursor: pointer;
+        z-index: 100;
+    }
+    header > .inner .hamberg span{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 15px;
+        background-color: #000;
+        transition: all 0.5s;
+    }
+    header > .inner .hamberg span:first-child{
+        top: 0;
+    }
+    header > .inner .hamberg span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    header > .inner .hamberg span:last-child{
+        bottom: 0;
+    }
+    header > .inner .hamberg.active span:first-child{
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    header > .inner .hamberg.active span:nth-child(2){
+        opacity: 0;
+    }
+    header > .inner .hamberg.active span:last-child{
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+
+/* header Fin */
+
+    footer{
+        padding: 30px 0;
+    }
+    footer > div.inner{
+        margin: 0 auto 30px;
+    }
+    footer > div.inner h2{
+        display: none;
+    }
+    footer > div.inner > div{
+        width: 30%;
+        margin-left: 5%;
+    }
+    footer > div.inner > div > h3{
+        margin-bottom: 10px;
+    }
+    footer > div.inner > div:first-of-type{
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 1025px){
+    
+    header{
+        padding: 30px 0 20px;
+        background-color: rgba(79, 51, 29, 0.2);
+        transition-duration:0.7s;
+    }
+    header > .inner{
+        text-align: center;
+    }
+    header > .inner h1 a{
+        width: 250px;
+        height: 25px;
+        background-image: url("../images/logo_w.png");
+    }
+    header > .inner nav{
+        display: inline-block;
+        width: 30%;
+        height: 25px;
+        padding-top: 5px;
+    }
+    header > .inner nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header > .inner nav ul li{
+        margin-left: 15%;
+    }
+    header > .inner nav ul li a{
+        color: #fff;
+    }
+    header > .inner nav ul li:first-of-type{
+        margin-left: 0px;
+    }
+    header > .inner nav ul li a:after{
+        content: '';
+        display: block;
+        margin-top: 3px;
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+    header > .inner nav ul li:hover a:after{
+        transform: scaleX(1);
+    }
+    header > .inner > button{
+        height: 25px;
+        box-sizing: border-box;
+    }
+    header > .inner > button:last-of-type{
+        color: #fff;
+        margin-right: 2%;
+    }
+    header > .inner .btn_wish{
+        background-image: url("../images/main/ico_heart_w.png");
+    }
+
+/* header Change */
+    header.headerChange{
+        background-color: #fff;
+        box-shadow: 0 1px 10px 1px rgba(0,0,0,0.2);
+    }
+    header.headerChange > .inner h1 a{
+        background: url("../images/logo_b.png") no-repeat center center;
+        background-size: contain;
+    }
+    header.headerChange > .inner nav ul li a{
+        color: #000;
+    }
+    header.headerChange > .inner nav ul li a:after{
+        background: #000;
+    }
+    header.headerChange > .inner > button:last-of-type{
+        color: #000;
+    }
+    header.headerChange > .inner > .btn_wish{
+        background: url("../images/main/ico_heart_b.png") no-repeat center center;
+        background-size: contain;
+    }
+
+/* header Fin */
+
+    footer{
+        padding: 40px 0;
+    }
+    footer > div.inner{
+        margin: 0 auto 40px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    footer > div.inner >*{
+        width: 23.5%;
+        margin-left: 2%;
+    }
+    footer > div.inner h2{
+        margin-left: 0;
+    }
+    footer > div.inner h2 a{
+        max-width: 250px;
+        height: 25px;
+        display: block;
+        text-indent: -9999px;
+        background: url("../images/logo_b.png") no-repeat left center;
+        background-size: contain;
+    }
+    footer > div.inner > div > h3{
+        margin-bottom: 15px;
+    }
+}
