@@ -27,7 +27,6 @@ $(document).ready(function(){
     loginClose();
     menuHamberg();
     goTop();
-    liHeight02();
     toastUp();
     toastDown();
     infoUp();
@@ -132,17 +131,6 @@ function goTop(){
         } else {
             $('.top').fadeOut();
         };
-    });
-};
-
-function liHeight02(){
-    var li_h = $(".list .inner ul > li:last-of-type").height();
-    $(".list .inner ul > li:first-of-type").height(li_h);
-    $(window).resize(function () {
-        li_h = $(".list .inner ul > li:last-of-type").height();
-        setTimeout(function () {
-            $(".list .inner ul > li:first-of-type").height(li_h);
-        }, 0);
     });
 };
 
